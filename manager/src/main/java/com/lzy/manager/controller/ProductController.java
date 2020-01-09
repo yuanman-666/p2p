@@ -38,6 +38,7 @@ public class ProductController {
     @RequestMapping("add")
     public String add(@RequestBody Product product){
         System.out.println(product.getName());
+        //分支1
         return "添加成功";
     }
 }
