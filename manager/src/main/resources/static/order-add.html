@@ -28,6 +28,8 @@
                 service.add($scope.product).success(
                     function (response) {
                         alert(response);
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
                     }
                 )
             }
