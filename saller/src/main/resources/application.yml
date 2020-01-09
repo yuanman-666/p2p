@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  servlet-path: /saller
+
+logging:
+  level:
+    com.googlecode.jsonrpc4j: debug
+rpc:
+  client:
+    url:  http://localhost:8081/manager/
+    basePackage: com.lzy.api
+spring:
+  cache:
+    type: hazelcast
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/seller?user=root&password=root&useUnicode=true&characterEncoding=utf-8
+  jpa:
+    show-sql: true
